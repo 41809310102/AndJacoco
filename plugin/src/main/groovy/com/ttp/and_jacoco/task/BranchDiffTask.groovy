@@ -86,6 +86,7 @@ class BranchDiffTask extends DefaultTask {
         if (!parent.exists()) parent.mkdirs()
 
         println("writerDiffToFile size=" + diffFiles.size() + " to >" + path)
+        println("--------------------------------------------------------------->jacoco")
 
         FileOutputStream fos = new FileOutputStream(path)
         for (String str : diffFiles) {
